@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+import { HashRouter, Switch, Route, NavLink } from "react-router-dom";
 import { CartContext } from '../CartContext';
 import { Item } from '../components/item';
 import { StoreList } from '../components/storeList';
@@ -28,7 +28,7 @@ export const BoughtItems = () => {
     return (
         <div>
             <h3>Bought Items</h3>
-            <Router>
+            <HashRouter>
                 <div>
                     <nav>
                         <ul>
@@ -61,8 +61,7 @@ export const BoughtItems = () => {
                         </Route>
                     </Switch>
                 </div>
-            </Router>
-
+            </HashRouter>
         </div>
     );
 }

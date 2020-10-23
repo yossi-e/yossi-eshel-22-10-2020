@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+import { HashRouter, Switch, Route, NavLink } from "react-router-dom";
 import { BoughtItems } from './pages/BoughtItems';
 import { ReceivedItems } from './pages/ReceivedItems';
 import { CartProvider } from './CartContext';
@@ -11,7 +11,7 @@ function App() {
   return (
     <CartProvider>
       <div className="container">
-        <Router>
+        <HashRouter basename='/'>
           <div>
             <nav>
               <ul>
@@ -38,7 +38,7 @@ function App() {
               </Route>
             </Switch>
           </div>
-        </Router>
+        </HashRouter>
       </div>
     </CartProvider>
   );
