@@ -1,0 +1,26 @@
+[
+    {
+        "name": "iPhone 12 Pro",
+        "price": 999.00,
+        "currency": "USD",
+        "store": "amazon",
+        "est": "01/01/2021",
+        "id": 1
+    },
+    {
+        "name": "POCO F2 Pro",
+        "price": 599.00,
+        "currency": "USD",
+        "store": "mi store",
+        "est": "01/12/2020",
+        "id": 2
+    },
+    {
+        "name": "DJI Mavic 2 Pro Drone",
+        "price": 1429.99,
+        "currency": "USD",
+        "store": "mi store",
+        "est": "03/12/2020",
+        "id": 3
+    }
+]
